@@ -1,0 +1,219 @@
+/* General Styles */
+/* Sticky Footer Layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #0c6170;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbf5f0;
+    color: #0c6170;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #0c6170;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #37beb0;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+}
+
+/* Home Section */
+.home {
+    background-color: #37beb0;
+    text-align: center;
+    padding: 50px 20px;
+    flex: 1; 
+}
+
+.home h2 {
+    color: white;
+}
+
+.home .btn {
+    background-color: #a4e5e0;
+    padding: 10px 20px;
+    color: #0c6170;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #a4e5e0;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    color: #0c6170;
+}
+
+.project-card p {
+    color: #37beb0;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #dbf5f0;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #0c6170;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #37beb0;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #0c6170;
+}
+
+.contact button {
+    background-color: #0c6170;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #37beb0;
+}
+
+/* Footer */
+footer {
+    background-color: #0c6170;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .project-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .final {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%;
+    }
+}
